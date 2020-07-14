@@ -1,4 +1,6 @@
 # Busqueda-Y-Ordenacion en C.
+Números aleatorios desde 1 hasta 32767.
+
 ### Ordenación:
 + Burbuja
 + Burbuja Mejorada
