@@ -30,3 +30,5 @@ Números aleatorios desde 1 hasta 32767.
 **Créditos**
 
 ![captura creditos](https://user-images.githubusercontent.com/67779237/87479169-d929de00-c5df-11ea-9954-d1a8b4d08291.png)
+
+## TecNM Campus Hermosillo
