@@ -1,16 +1,13 @@
-/*
-PROGRAMMER DAVID LLANES 
-*/
 #include <stdio.h>
 #include <stdbool.h>
 #include <time.h>
 #include <stdlib.h>
 #include <windows.h>
 int ordenado = 0;
-/*********** Funcion para generar números aleatorios del 1 hasta el tam ********/
+/*********** Funcion para generar nÃºmeros aleatorios del 1 hasta el tam ********/
 int RandomNumber(int inicio, int fin)
 {
-	//Genera un número aleatorio entre inicio y fin.
+	//Genera un nÃºmero aleatorio entre inicio y fin.
 	int resultado = 0;
 	
 	//Calculamos el margen entre inicio y fin
@@ -19,7 +16,7 @@ int RandomNumber(int inicio, int fin)
 	//Establecemos el comienzo del intervalo
 	int comienzo = inicio;
 	
-	//Comprobamos si el intervalo está al revés
+	//Comprobamos si el intervalo estÃ¡ al revÃ©s
 	if(inicio>fin)
 	{
 		//Cambiamos el comienzo
@@ -29,17 +26,17 @@ int RandomNumber(int inicio, int fin)
 		margen = margen *-1;
 	}
 	/*
-	*Añadimos uno al margen ya que la función 
+	*AÃ±adimos uno al margen ya que la funciÃ³n 
 	*rand calcula entre el 0 y uno menos que el margen
 	*/
 	
 	margen++;
 	
 	/*
-	Si el intervalo no comienza y acaba en el mismo número.
+	Si el intervalo no comienza y acaba en el mismo nÃºmero.
 	*/
 	
-	//Generamos el número aleatorio.
+	//Generamos el nÃºmero aleatorio.
 	resultado = comienzo +(rand()%margen);
 	
 	return resultado;
@@ -367,15 +364,15 @@ int main()
 	srand(getpid());//Seed generator for pseudo-random numbers
 	int  i, tam,s,c;
 	printf("HOLA, BIENVENIDO!\n");
-	printf("PARA COMENZAR INGRESE EL TAMAÑO DEL ARREGLO DESDE 1 HASTA 32767\n");
+	printf("PARA COMENZAR INGRESE EL TAMAÃ‘O DEL ARREGLO DESDE 1 HASTA 32767\n");
 	scanf("%i",&tam);
-	int arr[tam];//Our array for user´s input
+	int arr[tam];//Our array for userÂ´s input
 	
     int n = sizeof (arr) / sizeof(arr[0]);//Getting length f array
-		//Now  let´s populate this array with our random ints from 1 to tam
+		//Now  letÂ´s populate this array with our random ints from 1 to tam
 	for(i= 0 ; i < n; i++)
 	{
-		arr[i] = RandomNumber(1,tam);//Range from 1 to tamaño del arreglo 
+		arr[i] = RandomNumber(1,tam);//Range from 1 to tamaÃ±o del arreglo 
 	}
 	
 	//And  loop for printing the resuls
@@ -511,7 +508,7 @@ int main()
 		printf("\n                                 ATIVIDAD I EN CLASE DE LA MATERIA ESTRUCTURAS DE ");
 		printf("\n                                   DATOS ENTREGADO EL DIA 17 DE OCTUBRE DEL 2018  ");
 		printf("\n                                           CODIGO HECHO EN LENGUAJE C POR:        ");
-		printf("\n                                                    DAVID LLANES                  ");
+		printf("\n                                                                                  ");
 		printf("\n                               ___________________________________________________");		
 		break;
 			default:
